@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>activity</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+    <div class="sslide-wrapper" style="width: 375px; height: 667px; position: relative; overflow: hidden;"><ul id="slideList" style="position: relative; width: 375px; height: 3335px; transform: translateY(-2668px);">
+        <li class="page page1" style="height: 667px; width: 375px;">
+            <div class="headpics" style="height: 270px;">
+                <img src="./activity/T3ytETByWT1RXrhCrK.jpg" alt="" class="animated fadeInLeft">
+                <img src="./activity/T3KaETByWT1RXrhCrK.jpg" alt="" class="animated fadeInLeft delay0-6">
+                <img src="./activity/T3KRETByWT1RXrhCrK.jpg" alt="" class="animated fadeIn delay1-2">
+                <img src="./activity/T3KyETByWT1RXrhCrK.jpg" alt="" class="animated fadeInRight delay0-6">
+                <img src="./activity/T3KtETByWT1RXrhCrK.jpg" alt="" class="animated fadeInRight">
+            </div>
+            <div class="logo animated fadeInUp delay2">
+                <img src="./activity/T3_XJTBjbT1RCvBVdK.png" alt="">
+            </div>
+            <div class="text animated fadeIn slow2 delay2-5">
+                <img src="./activity/T37RETByWT1R4cSCrK.png" alt="">
+            </div>
+        </li>
+        <li class="page page2" style="height: 667px; width: 375px;">
+            <div class="items">
+                <div class="item">
+                    <img src="./activity/T37yETByWT1RXrhCrK.jpg" alt="" class="animated flipInY">
+                    <img src="./activity/T37tETByWT1RXrhCrK.jpg" alt="" class="animated flipInY delay0-3">
+                    <img src="./activity/T3maETByWT1RXrhCrK.jpg" alt="" class="animated flipInY delay0-6">
+                    <img src="./activity/T3mRETByWT1RXrhCrK.jpg" alt="" class="animated flipInY delay0-9">
+                </div>
+                <a href="/invite.html" class="more animated rotateIn delay2"></a>
+            </div>
+            <div class="text animated fadeIn delay2-5 slow2">
+                <img src="./activity/T3myETByWT1R4cSCrK.png" alt="">
+                <img src="./activity/T3mtETByWT1R4cSCrK.png" alt="" class="seal">
+            </div>
+        </li>
+        <li class="page page3" style="height: 667px; width: 375px;">
+            <div class="items">
+                <div class="item">
+                    <img src="./activity/T35aETByWT1RXrhCrK.jpg" alt="" class="animated flipInY">
+                    <img src="./activity/T35RETByWT1RXrhCrK.jpg" alt="" class="animated flipInY delay0-3">
+                    <img src="./activity/T35yETByWT1RXrhCrK.jpg" alt="" class="animated flipInY delay0-6">
+                    <img src="./activity/T35tETByWT1RXrhCrK.jpg" alt="" class="animated flipInY delay0-9">
+                </div>
+                <a href="/invite.html" class="more animated rotateIn delay2"></a>
+            </div>
+            <div class="text animated fadeIn delay2-5 slow2">
+                <img src="./activity/T3_aETByWT1R4cSCrK.png" alt="">
+                <img src="./activity/T3mtETByWT1R4cSCrK.png" alt="" class="seal">
+            </div>
+        </li>
+        <li class="page page4" style="height: 667px; width: 375px;">
+            <div class="headpic">
+                <img src="./activity/T3_RETByWT1RXrhCrK.jpg" alt="">
+                <div class="bar animated fadeIn">
+                    <a href="buy.html" class="buy-btn">立即购买</a>
+                </div>
+            </div>
+            <div class="text animated fadeIn delay0-5 slow2">
+                <img src="./activity/T3_yETByWT1R4cSCrK.png" alt="">
+                <img src="./activity/T3mtETByWT1R4cSCrK.png" alt="" class="seal">
+            </div>
+        </li>
+        <li class="page page5" style="height: 667px; width: 375px;">
+            <div class="slogan" style="height: 318.75px;">
+                <div class="line">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+                <img src="./activity/T3_tETByWT1R4cSCrK.png" alt="" class="seal animated fadeIn delay1-5 in">
+                <div class="wrap animated print delay1 in">
+                    <img src="./activity/T3gaETByWT1R4cSCrK.png" alt="">
+                </div>
+                <div class="wrap animated print in">
+                    <img src="./activity/T3nRETBXET1R4cSCrK.png" alt="">
+                </div>
+            </div>
+            <div class="btns">
+                <a href="download.html" class="download-btn animated fadeInLeft delay2 in">立即下载</a>
+                <a href="share.html" class="share-btn animated fadeInRight delay2 in">继续分享</a>
+            </div>
+        </li>
+    </ul></div>
+    <div class="pop share" style="height: 667px;">
+        <img src="./activity/T3nyETBXET1R4cSCrK.png" alt="">
+    </div>
+<script src="./zepto.js"></script>
+<script src="./touch.js"></script>
+<script>
+$(function(){
+    var height = document.documentElement.clientHeight;
+    var width = document.documentElement.clientWidth;
+    $(".headpics").css('height', width*0.72);
+    $(".page5 .slogan").css('height', width*0.85);
+    $(".pop.share").css('height', height);
+    Zepto("#slideList").sSlide({
+        direction: "Y",
+        arrow: false
+    })
+    $(".share-btn").on('touchstart', function(e){
+        e.preventDefault();
+        $(".pop").show();
+        $(".pop").tap(function(){
+            $(this).hide();
+        });
+    });
+    // var url = 'http://app.kaipao.cc/v1/settings/install';
+    // $('a,button').click(function() {
+    //     window.location.href = url;
+    //     return false;
+    // });
+})
+</script>
+</body></html>
